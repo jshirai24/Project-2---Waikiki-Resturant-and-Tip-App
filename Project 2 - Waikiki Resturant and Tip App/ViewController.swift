@@ -11,16 +11,15 @@ import CoreLocation
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
     @IBOutlet weak var restaurantTableView: UITableView!
     
     @IBOutlet weak var waikikiMapView: MKMapView!
     
-    var restaurantArray = ["Maguro Brothers", "Marugame Udon", "Eggs 'n Things", "Liliha Bakery ⭐️⭐️⭐️⭐️", "Gyu-Kaku Japanese BBQ ⭐️⭐️⭐️", "Doraku Sushi ⭐️⭐️⭐️⭐️"]
+    var restaurantArray = ["Maguro Brothers", "Marugame Udon", "Eggs 'n Things", "Liliha Bakery ", "Gyu-Kaku Japanese BBQ ", "Doraku Sushi "]
+
     var restaurantDetailsArray = ["Shoyu Onion Ahi Poke - ⭐️⭐️⭐️⭐️", "Beef Udon - ⭐️⭐️⭐️", "Choco Chip Pancakes ⭐️⭐️⭐️⭐️", "Kimchee Fried Rice - ⭐️⭐️⭐️⭐️", "Sweet Soy Toro Beef - ⭐️⭐️⭐️", "Brownie Tempura -⭐️⭐️⭐️⭐️"]
+    let restaurantLogoImages: [UIImage?] = [UIImage(named:"Maguro Brothers"), UIImage(named:"Marugame Udon"), UIImage(named:"Eggs 'N Things"), UIImage(named:"Liliha Bakery"), UIImage(named:"Gyu-Kaku"), UIImage(named:"Doraku")]
     
-   // let myImages: [UIImage] = [Maguro Brothers]
-    //saying it can't find it in scope?
     
     let centeredLocation = CLLocation(latitude: 21.279363, longitude: -157.829224)
     let regionRadius: CLLocationDistance = 1000
@@ -34,6 +33,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let text = restaurantArray[indexPath.row]
         cell.detailTextLabel?.text = restaurantDetailsArray[indexPath.row]
+        cell.imageView?.image = restaurantLogoImages[indexPath.row]
         cell.textLabel?.text = text
         return cell
     }
@@ -46,7 +46,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view
         centerMapOnLocation(location: centeredLocation)
         
         let restaurantOne = restaurantObjectOne(title: "Maguro Brothers", coordinate: CLLocationCoordinate2D(latitude: 21.279636, longitude: -157.828713))
