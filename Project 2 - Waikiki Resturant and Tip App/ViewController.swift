@@ -46,8 +46,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view.
         centerMapOnLocation(location: centeredLocation)
         
+        let restaurantOne = restaurantObjectOne(title: "Maguro Brothers", coordinate: CLLocationCoordinate2D(latitude: 21.279636, longitude: -157.828713))
         
-        
+        let restaurantTwo = restaurantObjectTwo(title: "Marugame Udon", coordinate: CLLocationCoordinate2D(latitude: 21.279651, longitude: -157.828693))
+        let restaurantThree = restaurantObjectThree(title: "Eggs 'n Things", coordinate: CLLocationCoordinate2D(latitude: 21.274882, longitude: -157.824238))
         
         
     }
