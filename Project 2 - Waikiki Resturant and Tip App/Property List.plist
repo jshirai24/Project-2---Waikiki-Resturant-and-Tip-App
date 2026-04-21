@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RestaurantFoodImages</key>
+	<array>
+		<string>Shoyu Onion Ahi Poke Bowl</string>
+		<string>Beef Udon</string>
+		<string>Choco Chip Pancakes</string>
+		<string>Kimchee Fried Rice</string>
+		<string>Sweet Soy Toro Beef</string>
+		<string>Brownie Tempura</string>
+	</array>
+</dict>
+</plist>
