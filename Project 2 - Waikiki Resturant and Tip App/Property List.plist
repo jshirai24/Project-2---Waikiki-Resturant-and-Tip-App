@@ -2,14 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>RestaurantFoodImages</key>
+	<key>RestaurantLogoImages</key>
 	<array>
-		<string>Shoyu Onion Ahi Poke Bowl</string>
-		<string>Beef Udon</string>
-		<string>Choco Chip Pancakes</string>
-		<string>Kimchee Fried Rice</string>
-		<string>Sweet Soy Toro Beef</string>
-		<string>Brownie Tempura</string>
+		<string>Maguro Brothers</string>
+		<string>Marugame Udon</string>
+		<string>Eggs &apos;N Things</string>
+		<string>Liliha Bakery</string>
+		<string>Gyu-Kaku Japanese BBQ</string>
+		<string>Doraku Sushi</string>
 	</array>
 </dict>
 </plist>

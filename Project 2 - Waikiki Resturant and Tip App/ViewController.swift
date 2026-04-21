@@ -16,12 +16,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var waikikiMapView: MKMapView!
     
-    var restaurantFoodImageData = [String]()
+    var restaurantArray = ["Maguro Brothers", "Marugame Udon", "Eggs 'n Things", "Liliha Bakery ⭐️⭐️⭐️⭐️", "Gyu-Kaku Japanese BBQ ⭐️⭐️⭐️", "Doraku Sushi ⭐️⭐️⭐️⭐️"]
+    var restaurantDetailsArray = ["Shoyu Onion Ahi Poke - ⭐️⭐️⭐️⭐️", "Beef Udon - ⭐️⭐️⭐️", "Choco Chip Pancakes ⭐️⭐️⭐️⭐️", "Kimchee Fried Rice - ⭐️⭐️⭐️⭐️", "Sweet Soy Toro Beef - ⭐️⭐️⭐️", "Brownie Tempura -⭐️⭐️⭐️⭐️"]
     
-    var restaurantArray = ["Maguro Brothers ⭐️⭐️⭐️⭐️", "Marugame Udon ⭐️⭐️⭐️", "Eggs 'n Things ⭐️⭐️⭐️⭐️", "Liliha Bakery ⭐️⭐️⭐️⭐️", "Gyu-Kaku Japanese BBQ ⭐️⭐️⭐️", "Doraku Sushi ⭐️⭐️⭐️⭐️"]
+   // let myImages: [UIImage] = [Maguro Brothers]
+    //saying it can't find it in scope?
     
     let centeredLocation = CLLocation(latitude: 21.279363, longitude: -157.829224)
-    let regionRadius: CLLocationDistance = 10000
+    let regionRadius: CLLocationDistance = 1000
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -31,6 +33,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let text = restaurantArray[indexPath.row]
+        cell.detailTextLabel?.text = restaurantDetailsArray[indexPath.row]
         cell.textLabel?.text = text
         return cell
     }
@@ -47,11 +50,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         centerMapOnLocation(location: centeredLocation)
         
         let restaurantOne = restaurantObjectOne(title: "Maguro Brothers", coordinate: CLLocationCoordinate2D(latitude: 21.279636, longitude: -157.828713))
-        
-        let restaurantTwo = restaurantObjectTwo(title: "Marugame Udon", coordinate: CLLocationCoordinate2D(latitude: 21.279651, longitude: -157.828693))
+        let restaurantTwo = restaurantObjectTwo(title: "Marugame Udon", coordinate: CLLocationCoordinate2D(latitude: 21.279777, longitude: -157.825888))
         let restaurantThree = restaurantObjectThree(title: "Eggs 'n Things", coordinate: CLLocationCoordinate2D(latitude: 21.274882, longitude: -157.824238))
+        let restaurantFour = restaurantObjectFour(title: "Liliha Bakery", coordinate: CLLocationCoordinate2D(latitude: 21.278281, longitude: -157.826583))
+        let restaurantFive = restaurantObjectFive(title: "Gyu-Kaku Japanese BBQ", coordinate: CLLocationCoordinate2D(latitude: 21.280537, longitude: -157.829260))
+        let restaurantSix = restaurantObjectSix(title: "Doraku Sushi", coordinate: CLLocationCoordinate2D(latitude: 21.278756, longitude: -157.828951))
         
-        
+        waikikiMapView.addAnnotation(restaurantOne)
+        waikikiMapView.addAnnotation(restaurantTwo)
+        waikikiMapView.addAnnotation(restaurantThree)
+        waikikiMapView.addAnnotation(restaurantFour)
+        waikikiMapView.addAnnotation(restaurantFive)
+        waikikiMapView.addAnnotation(restaurantSix)
     }
     func centerMapOnLocation (location: CLLocation)
     {
