@@ -35,7 +35,7 @@ class BillTotalViewController: UIViewController {
 
         billTotalTextField.placeholder = "Enter the Bill amount"
         tipPercentageControl.selectedSegmentIndex = -1
-        titleLabel.text = "Tip Calculator"
+        titleLabel.text = "Guide to Tipping"
         
         
         
