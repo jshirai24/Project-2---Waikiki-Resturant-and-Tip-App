@@ -32,6 +32,8 @@ class BillTotalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.title = "Tip Calculator"
 
         billTotalTextField.placeholder = "Enter the Bill amount"
         tipPercentageControl.selectedSegmentIndex = -1
