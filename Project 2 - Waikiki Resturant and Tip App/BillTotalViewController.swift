@@ -9,21 +9,43 @@ import UIKit
 
 class BillTotalViewController: UIViewController {
 
+   
+    @IBOutlet weak var billTotalTextField: UITextField!
+    
+    @IBOutlet weak var tipPercentageControl: UISegmentedControl!
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var tipDescriptLabel: UILabel!
+    
+    @IBOutlet weak var setPercentageLabel: UILabel!
+    
+    @IBOutlet weak var tipAmountLabel: UILabel!
+    
+    @IBOutlet weak var totalBillAndTipAmountLabel: UILabel!
+    
+    @IBOutlet weak var tipResultLabel: UILabel!
+    
+    @IBOutlet weak var billLabel: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        billTotalTextField.placeholder = "Enter the Bill amount"
+        tipPercentageControl.selectedSegmentIndex = -1
+        titleLabel.text = "Tip Calculator"
+        
+        
+        
+        
+        
+        
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
