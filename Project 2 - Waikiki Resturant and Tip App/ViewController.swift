@@ -47,6 +47,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view
+        self.navigationItem.title = "Eats"
+        
         centerMapOnLocation(location: centeredLocation)
         
         let restaurantOne = restaurantObjectOne(title: "Maguro Brothers", coordinate: CLLocationCoordinate2D(latitude: 21.279636, longitude: -157.828713))

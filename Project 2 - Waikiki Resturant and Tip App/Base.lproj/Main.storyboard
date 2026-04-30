@@ -23,15 +23,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4i-Ny-0uR">
-                                <rect key="frame" x="62" y="227.33333333333337" width="252" height="164"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="164" id="6si-Nb-80n"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dNB-gf-QMx">
                                 <rect key="frame" x="45" y="442" width="286" height="34"/>
                                 <color key="backgroundColor" systemColor="systemMintColor"/>
@@ -88,6 +79,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4i-Ny-0uR">
+                                <rect key="frame" x="21" y="207" width="350" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="6si-Nb-80n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Vi-Dz-Jzq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -95,16 +95,16 @@
                             <constraint firstItem="tOw-GE-IBB" firstAttribute="top" secondItem="tOn-6e-r81" secondAttribute="bottom" constant="39" id="4V2-1F-kyS"/>
                             <constraint firstItem="mda-zV-c4u" firstAttribute="baseline" secondItem="tOw-GE-IBB" secondAttribute="baseline" id="4te-aZ-hq0"/>
                             <constraint firstItem="9mQ-R5-NfR" firstAttribute="top" secondItem="dNB-gf-QMx" secondAttribute="bottom" constant="8" id="AWV-l4-LEz"/>
-                            <constraint firstItem="X4i-Ny-0uR" firstAttribute="leading" secondItem="6Vi-Dz-Jzq" secondAttribute="leading" constant="62" id="C8Z-Gy-Q2a"/>
+                            <constraint firstItem="X4i-Ny-0uR" firstAttribute="leading" secondItem="6Vi-Dz-Jzq" secondAttribute="leading" constant="21" id="C8Z-Gy-Q2a"/>
                             <constraint firstItem="9mQ-R5-NfR" firstAttribute="centerX" secondItem="Zg6-Gf-V4l" secondAttribute="centerX" constant="8" id="HGS-Z3-MvW"/>
                             <constraint firstItem="w3M-xO-fRP" firstAttribute="top" secondItem="4dA-HE-zUJ" secondAttribute="bottom" constant="46.666666666666629" id="J30-c7-wva"/>
                             <constraint firstItem="w3M-xO-fRP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tOn-6e-r81" secondAttribute="trailing" constant="8" symbolic="YES" id="JOn-pe-ehb"/>
-                            <constraint firstItem="X4i-Ny-0uR" firstAttribute="top" secondItem="Cs7-Na-rc0" secondAttribute="bottom" constant="35" id="Ku8-nV-JgP"/>
+                            <constraint firstItem="X4i-Ny-0uR" firstAttribute="top" secondItem="Cs7-Na-rc0" secondAttribute="bottom" constant="14.666666666666657" id="Ku8-nV-JgP"/>
                             <constraint firstItem="dNB-gf-QMx" firstAttribute="centerX" secondItem="Cs7-Na-rc0" secondAttribute="centerX" id="LtR-Vl-JEa"/>
                             <constraint firstItem="mda-zV-c4u" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tOw-GE-IBB" secondAttribute="trailing" constant="8" symbolic="YES" id="QSf-2l-KzM"/>
                             <constraint firstItem="dNB-gf-QMx" firstAttribute="leading" secondItem="tOn-6e-r81" secondAttribute="leading" id="SD3-UD-wRk"/>
                             <constraint firstItem="mda-zV-c4u" firstAttribute="top" secondItem="w3M-xO-fRP" secondAttribute="bottom" constant="39" id="WaS-Nc-maa"/>
-                            <constraint firstItem="X4i-Ny-0uR" firstAttribute="centerX" secondItem="Cs7-Na-rc0" secondAttribute="centerX" id="Z0X-fc-FCx"/>
+                            <constraint firstItem="X4i-Ny-0uR" firstAttribute="centerX" secondItem="Cs7-Na-rc0" secondAttribute="centerX" constant="8" id="Z0X-fc-FCx"/>
                             <constraint firstItem="4dA-HE-zUJ" firstAttribute="top" secondItem="9mQ-R5-NfR" secondAttribute="bottom" constant="17.333333333333371" id="eAB-At-F1K"/>
                             <constraint firstItem="4dA-HE-zUJ" firstAttribute="leading" secondItem="6Vi-Dz-Jzq" secondAttribute="leading" constant="117.66666666666669" id="eLF-to-AL7"/>
                             <constraint firstItem="6Vi-Dz-Jzq" firstAttribute="trailing" secondItem="dNB-gf-QMx" secondAttribute="trailing" constant="62" id="fOH-v5-DK8"/>
@@ -220,11 +220,11 @@
             </objects>
             <point key="canvasLocation" x="-833" y="63"/>
         </scene>
-        <!--Bill Total-->
+        <!--Tip Calculator-->
         <scene sceneID="cUX-b3-xgP">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3eM-zi-Zg4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Bill Total" image="dollarsign.square.fill" catalog="system" id="Tht-Qz-Cby"/>
+                    <tabBarItem key="tabBarItem" title="Tip Calculator" image="dollarsign.square.fill" catalog="system" id="Tht-Qz-Cby"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IqX-6L-Bcz">
                         <rect key="frame" x="0.0" y="118" width="393" height="54"/>
@@ -239,11 +239,11 @@
             </objects>
             <point key="canvasLocation" x="147" y="436"/>
         </scene>
-        <!--Restaurants-->
+        <!--Eats-->
         <scene sceneID="6mz-BA-shy">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xbr-1c-lmZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Restaurants" image="pin.circle.fill" catalog="system" id="zGU-13-GUY"/>
+                    <tabBarItem key="tabBarItem" title="Eats" image="fork.knife" catalog="system" id="zGU-13-GUY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kyH-NN-yIX">
                         <rect key="frame" x="0.0" y="118" width="393" height="54"/>
@@ -262,15 +262,15 @@
     <resources>
         <image name="Maguro Brothers" width="500" height="500"/>
         <image name="dollarsign.square.fill" catalog="system" width="128" height="114"/>
-        <image name="pin.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="fork.knife" catalog="system" width="94" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray3Color">
-            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemMintColor">
-            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.78431372549019607" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
